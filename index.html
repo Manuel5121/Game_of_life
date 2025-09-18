@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">
+  <title>Game of life</title>
+</head>
+<body>
+  <h1>Conway's Game of life</h1>
+
+  <div class="buttons" style="display: flex;">
+    <div class="leftButtons">
+      <button id="str">Start</button>
+      <button id="sto">Stop</button>
+      <button id="stp">Step ></button>
+      <button id="cle">Clean</button>
+    </div>
+    <div class="rightButtons">
+      <p>Choose a starting algorithm</p>
+      <button class="algorithButtons" id="A1">Bread</button>
+      <button class="algorithButtons" id="A2">Frog</button>
+      <button class="algorithButtons" id="A3">Plane</button>
+      <button class="algorithButtons" id="A4">Spaceship</button>
+      <button class="algorithButtons" id="A5">Firework</button>
+    </div>
+  </div>
+
+  <div class="slideContainer">
+  <input type="range" min="10" max="30" value="10" class="slider" id="myRange">
+  <p style="display: inline;">Grid size: <span id="demo"> 10 </span> x <span id="demo2"> 10 </span></p>
+      
+  <input type="range" min="0.2" max="5" value="2" step="0.1" class="slider" id="myTime">
+  <p style="display: inline;">Speed: <span id="demo3"> 2000 </span><span>ms</span>
+      
+  <p>Step: <span id="step"> 0 </span></p>
+  </div>
+
+  <div class="canvasDiv">
+    <canvas id="canvas" width="600" height="500">canva o algo</canvas>
+  </div>
+
+  <script src="src/main.js"></script>
+</body>
+</html>
